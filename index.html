@@ -6,11 +6,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhishek Pardhi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/main.css">
 </head>
 
 <body>
-    <div class="wrapper"></div>
+    <div class="hero-img"></div>
+    <div class="wrapper">
+        <header>
+            <a href="#" class="logo">Gaming<span>Controller</span></a>
+            <nav>
+                <svg class="close" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41L17.59 5Z" fill="black"/>
+                </svg>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Controllers</a></li>
+                    <li><a href="#">Gamers</a></li>
+                </ul>
+            </nav>
+            <svg class="menu" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 11H4C3.4 11 3 11.4 3 12C3 12.6 3.4 13 4 13H20C20.6 13 21 12.6 21 12C21 11.4 20.6 11 20 11ZM4 8H20C20.6 8 21 7.6 21 7C21 6.4 20.6 6 20 6H4C3.4 6 3 6.4 3 7C3 7.6 3.4 8 4 8ZM20 16H4C3.4 16 3 16.4 3 17C3 17.6 3.4 18 4 18H20C20.6 18 21 17.6 21 17C21 16.4 20.6 16 20 16Z" fill="#292929"/>
+            </svg>
+        </header>
+        <section class="hero">
+            <h1>Regain your confidence in the lobby.</h1>
+            <p class="subhead">A controller build with purpose and to take your game to next level.</p>
+            <svg class="down-arrow" viewBox="0 0 24 212" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.5 2C13.5 1.17157 12.8284 0.5 12 0.5C11.1716 0.5 10.5 1.17157 10.5 2H13.5ZM10.9393 211.061C11.5251 211.646 12.4749 211.646 13.0607 211.061L22.6066 201.515C23.1924 200.929 23.1924 199.979 22.6066 199.393C22.0208 198.808 21.0711 198.808 20.4853 199.393L12 207.879L3.51472 199.393C2.92893 198.808 1.97918 198.808 1.3934 199.393C0.807612 199.979 0.807612 200.929 1.3934 201.515L10.9393 211.061ZM10.5 2V210H13.5V2H10.5Z" fill="#1E1E1E"/>
+            </svg>
+        </section>
+        <section class="more-info">
+            <div class="feature">
+                <div class="content">
+                    <p class="title">LightWeight</p>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quaerat quis! Modi voluptatum dolore ut!</p>
+                </div>
+                <img src="images/controller1.jpg" alt="1st controller">
+            </div>
+            <div class="feature flipped">
+                <div class="content">
+                    <p class="title">LightWeight</p>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quaerat quis! Modi voluptatum dolore ut!</p>
+                </div>
+                <img src="images/controller4.jpg" alt="1st controller">
+            </div>
+            <div class="feature">
+                <div class="content">
+                    <p class="title">LightWeight</p>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quaerat quis! Modi voluptatum dolore ut!</p>
+                </div>
+                <img src="images/controller3.jpg" alt="1st controller">
+            </div>
+        </section>
+    </div>
+    <script>
+        const menu = document.querySelector('.menu')
+        const close = document.querySelector('.close')
+        const nav = document.querySelector('nav')
+        menu.addEventListener('click', () => {
+            nav.classList.add('open-nav')
+        })
+        close.addEventListener('click', () => {
+            nav.classList.remove('open-nav')
+        })
+    </script>
 </body>
 
 </html>
